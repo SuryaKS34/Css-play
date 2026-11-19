@@ -1,0 +1,107 @@
+/* * universal selector */
+/* global tag styling */
+*{
+    color: rgb(0, 0, 0);
+    box-sizing: brder-box ;
+}
+
+
+/* 3 types of css seclectors */
+h1{
+    color: blue;
+}
+
+/* class selection */
+.bg-dark{
+    color: white;
+    background-color: black;
+}
+
+.light{
+    font-weight: 300;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+/* id selector */
+#hot-news{
+    color: rgb(211, 33, 33);
+
+}
+
+/* learning the box model */
+.container{
+    height: 300px;
+    /* background-color: grey; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px; /* margin-botton overrides margin:auto while keeping left right top auto */
+    gap: 5px;
+}
+.border{
+    border: 1px solid black;
+}
+.square{
+    aspect-ratio: 1/1;
+}
+
+.box{
+    height: 50%;
+    text-align: center;
+     margin: 10px ;
+    /* margin-top: 10px ; */
+    
+    /* min-width: 200px;
+    max-width: 250px; */
+    
+    /* overflow: hidden; */
+
+    position: relative;
+
+}
+.box:hover{
+    transform: rotate3d();
+    transition-duration: 500ms;
+    transform: scale(1.1);
+}
+.box > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+
+}
+.box > img:hover{
+    filter: blur(0.5px) saturate(50%);
+
+}
+/* .box > .box-content{
+    position: absolute;
+    top : 70%;
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+} */
+.box:nth-child(1){
+    position: relative;
+    /* top : 5px; */
+}
+
+
+.shadow-simple:hover{
+    box-shadow: 1px 1px 2px 1px rgb(181, 100, 100) ;
+}
+.round{
+    /* border-radius: 20px; */
+}
